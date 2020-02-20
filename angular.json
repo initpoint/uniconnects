@@ -17,15 +17,28 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/uniconnects",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/web.config",
+              "src/styles/css/style.css",
+              "src/styles/css/animate.css",
+              "src/styles/css/bootstrap.min.css",
+              "src/styles/css/flatpickr.min.css",
+              "src/styles/css/font-awesome.min.css",
+              "src/styles/css/jquery.mCustomScrollbar.min.css",
+              "src/styles/css/jquery.range.css",
+              "src/styles/css/line-awesome-font-awesome.min.css",
+              "src/styles/css/line-awesome-font-awesome.css",
+              "src/styles/css/line-awesome.min.css",
+              "src/styles/css/line-awesome.css",
+              "src/styles/css/responsive.css"
             ],
             "styles": [
               "src/styles.scss"
@@ -124,6 +137,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "uniconnects"
+    }
+  },
+  "defaultProject": "uniconnects",
+  "cli": {
+    "analytics": "26212f4e-1e81-4653-a015-c1f9183bef1e"
+  }
 }
